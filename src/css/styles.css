@@ -1,0 +1,250 @@
+.home {
+    margin: 0;
+}
+
+.header {
+display: flex;
+flex-direction: column;
+}
+
+.contact {
+    /* position: absolute; */
+    background-color:#437465;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    /* background-color: transparent; */
+    /* z-index: 100; */
+}
+
+.contract_address {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.contract_copy {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.slide {
+    /* margin-top: 100px; */
+    background: url('../img/Frame-1597882528.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.icon-binance {
+    position: absolute;
+    top: 0; /* Start from the top */
+    left: 47%;
+    opacity: 0; /* Start with invisible */
+    animation: dropIn 2s ease-in-out forwards; /* Animation to drop in */
+}
+
+@keyframes dropIn {
+    0% {
+        top: 0; /* Start from the top */
+        opacity: 0; /* Start with invisible */
+    }
+    100% {
+        top: 45%; /* End at the current position */
+        opacity: 1; /* End with fully visible */
+    }
+}
+
+.icon-slide.icon-1{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.icon-slide.icon-2{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}
+
+.icon-slide {
+    animation: float 3s ease-in-out infinite;
+}
+
+.slide__description {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.slide__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slide__button {
+    background-color: #114f3c;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.infor {
+    display: flex;
+    flex-direction: row;
+    border: #000 2px solid;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 10px 0px;
+    width: 30%
+}
+
+.infor img{
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
+    margin-right: 20px;
+}
+
+.rocket {
+    position: absolute;
+    top: 180%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to be exactly in the center */
+    animation: float 3s ease-in-out infinite; /* Add floating animation */
+    z-index: 100;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(-15px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(15px);
+    }
+}
+
+.thong-ke {
+    background: url('../img/bg_xuong_cho.png');
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thong-ke .chi-tiet-tk {
+    width: 50%;
+    height: 60%;
+}
+
+.button_contract {
+    display: flex;
+    margin-top: 20px;
+    /* width: 50%; */
+}
+
+.button_contract .contract_address {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.btn_thong-ke {
+    background-color: transparent;
+    color: white;
+    border: white 2px solid;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.icon-mark-btn {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-mark-btn:hover {
+    transform: scale(1.2); /* Zoom in effect */
+}
+
+.doi-tac {
+    background: url('../img/cho1.png');
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ds_doi-tac {
+
+}
+
+.icon-doitac {
+    margin: 5px;
+    display: inline-block;
+
+    /* cursor: pointer; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-doitac:hover {
+    transform: scale(1.2); /* Zoom in effect */
+}
